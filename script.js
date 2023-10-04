@@ -40,7 +40,7 @@ function checkScore() {
 
     winningCombos.forEach(array => {
         const circleWins = array.every(cell => 
-            allSquares [cell].firstChild?.classList.contains('circle'));
+            allSquares[cell].firstChild?.classList.contains('circle'));
 
         if (circleWins) {
             infoDisplay.textContent = "Circle wins!";
